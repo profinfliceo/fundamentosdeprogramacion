@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Reglas de precedencia | Introducción a la Programación con PseInt </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Carlos Rodríguez Rosano" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-14"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Introducción a la Programación con PseInt</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Introducción a la Programación con PseInt</a></li>
+   <li><a href="el_objetivo.html" class="no-ch">El objetivo</a></li>
+   <li><a href="introduccin_a_la_programacin.html" class="daddy">Introducción a la Programación</a>
+   <ul class="other-section">
+      <li><a href="comprensin_del_problema.html" class="no-ch">Comprensión del Problema</a></li>
+      <li><a href="encontrar_una_solucin.html" class="no-ch">Encontrar una solución</a></li>
+      <li><a href="enunciar_un_algoritmo.html" class="no-ch">Enunciar un Algoritmo</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="estructura_de_un_programa.html" class="current-page-parent daddy">Estructura de un programa</a>
+   <ul>
+      <li><a href="el_cdigo.html" class="daddy">El código</a>
+      <ul class="other-section">
+         <li><a href="sintaxis.html" class="no-ch">Sintaxis</a></li>
+         <li><a href="instrucciones.html" class="no-ch">Instrucciones</a></li>
+         <li><a href="sentencias.html" class="no-ch">Sentencias</a></li>
+      </ul>
+      </li>
+      <li><a href="estructura_de_datos.html" class="no-ch">Estructura de datos</a></li>
+      <li class="current-page-parent"><a href="expresiones.html" class="current-page-parent daddy">Expresiones</a>
+      <ul>
+         <li><a href="operadores.html" class="no-ch">Operadores</a></li>
+         <li id="active"><a href="reglas_de_precedencia.html" class="active no-ch">Reglas de precedencia</a></li>
+         <li><a href="operadores_lgicos.html" class="no-ch">Operadores Lógicos</a></li>
+      </ul>
+      </li>
+      <li><a href="delimitadores.html" class="no-ch">Delimitadores</a></li>
+   </ul>
+   </li>
+   <li><a href="comenzando_a_programar.html" class="daddy">Comenzando a programar</a>
+   <ul class="other-section">
+      <li><a href="algoritmo_de_suma.html" class="no-ch">Algoritmo de suma</a></li>
+      <li><a href="algoritmo_del_tringulo.html" class="no-ch">Algoritmo del triángulo</a></li>
+   </ul>
+   </li>
+   <li><a href="comenzando_con_la_programacin_estructurada.html" class="daddy">Comenzando con la programación estructurada</a>
+   <ul class="other-section">
+      <li><a href="estructura_de_decisin.html" class="daddy">Estructura de Decisión</a>
+      <ul class="other-section">
+         <li><a href="realizar_el_ejercicio_resolucin_de_ecuacin_de_segundo_grado.html" class="no-ch">Realizar el ejercicio resolución de Ecuación de Segundo Grado</a></li>
+      </ul>
+      </li>
+      <li><a href="estructura_repetitiva.html" class="daddy">Estructura Repetitiva</a>
+      <ul class="other-section">
+         <li><a href="algoritmo_de_la_tabla_de_multiplicar.html" class="no-ch">Algoritmo de la Tabla de Multiplicar</a></li>
+      </ul>
+      </li>
+      <li><a href="estructura_iterativa.html" class="no-ch">Estructura Iterativa</a></li>
+      <li><a href="variables_especiales.html" class="daddy">Variables especiales</a>
+      <ul class="other-section">
+         <li><a href="variable_contadora.html" class="no-ch">Variable contadora</a></li>
+         <li><a href="variable_acumuladora.html" class="no-ch">Variable acumuladora</a></li>
+         <li><a href="variable_flag_bandera_o_seal.html" class="no-ch">Variable flag, bandera o señal</a></li>
+      </ul>
+      </li>
+      <li><a href="intercambio_de_variables_o_swap.html" class="no-ch">Intercambio de variables o swap</a></li>
+   </ul>
+   </li>
+   <li><a href="funciones.html" class="daddy">Funciones</a>
+   <ul class="other-section">
+      <li><a href="matemticas.html" class="no-ch">Matemáticas</a></li>
+      <li><a href="trigonomtricas.html" class="no-ch">Trigonométricas</a></li>
+      <li><a href="funciones_de_cadena_de_texto.html" class="no-ch">Funciones de cadena de texto</a></li>
+   </ul>
+   </li>
+   <li><a href="arrays.html" class="daddy">Arrays</a>
+   <ul class="other-section">
+      <li><a href="dimensin_e_ndice.html" class="no-ch">Dimensión e índice</a></li>
+      <li><a href="declaracin_de_una_variable_de_tipo_array.html" class="no-ch">Declaración de una variable de tipo array</a></li>
+      <li><a href="vectores.html" class="daddy">Vectores</a>
+      <ul class="other-section">
+         <li><a href="carga_de_un_vector.html" class="no-ch">Carga de un vector</a></li>
+         <li><a href="procesamiento_del_vector_cargado.html" class="no-ch">Procesamiento del vector cargado</a></li>
+         <li><a href="bsqueda_y_muestra_del_vector.html" class="no-ch">Búsqueda y muestra del vector</a></li>
+         <li><a href="ordenamiento_de_un_vector.html" class="no-ch">Ordenamiento de un vector</a></li>
+         <li><a href="ordenamiento_por_burbujeo.html" class="no-ch">Ordenamiento por Burbujeo</a></li>
+         <li><a href="primera_optimizacin_acortamiento_del_ciclo_de_burbujeo.html" class="no-ch">Primera optimización, acortamiento del ciclo de burbujeo</a></li>
+         <li><a href="segunda_optimizacin_detectar_vector_ordenado.html" class="no-ch">Segunda optimización, detectar vector ordenado</a></li>
+         <li><a href="tercera_optimizacin_ciclos_alternados.html" class="no-ch">Tercera optimización, ciclos alternados</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="archivos.html" class="daddy">Archivos</a>
+   <ul class="other-section">
+      <li><a href="estructura_de_un_archivo_de_datos.html" class="daddy">Estructura de un archivo de datos</a>
+      <ul class="other-section">
+         <li><a href="abrir_un_archivo.html" class="no-ch">Abrir un archivo</a></li>
+         <li><a href="leer_el_archivo.html" class="no-ch">Leer el archivo</a></li>
+         <li><a href="detectar_el_final_del_archivo.html" class="no-ch">Detectar el final del archivo</a></li>
+         <li><a href="guardar_datos_en_un_archivo.html" class="no-ch">Guardar datos en un archivo</a></li>
+         <li><a href="cierre_de_un_archivo.html" class="no-ch">Cierre de un archivo</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="algoritmos_tpicos.html" class="daddy">Algoritmos típicos</a>
+   <ul class="other-section">
+      <li><a href="creacin_de_un_archivo.html" class="no-ch">Creación de un archivo</a></li>
+      <li><a href="lectura_del_archivo_creado.html" class="no-ch">Lectura del archivo creado</a></li>
+      <li><a href="trabajar_con_2_archivos.html" class="no-ch">Trabajar con 2 archivos</a></li>
+      <li><a href="corte_de_control.html" class="no-ch">Corte de control</a></li>
+   </ul>
+   </li>
+   <li><a href="propuestas_de_ejercicios.html" class="no-ch">Propuestas de ejercicios</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="operadores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="operadores_lgicos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Reglas de precedencia</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id14">
+<div class="iDevice emphasis0" >
+<div id="ta14_123_2" class="block iDevice_content">
+
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id15">
+<div class="iDevice emphasis0" >
+<div id="ta15_124_2" class="block iDevice_content">
+<div class="exe-text"><ol>
+<li>Potenciación (^).</li>
+<li>Multiplicación (*), división (/), y el resto de la división (%).</li>
+<li>sumas y</li>
+<li>operadores</li>
+<li>operador lógico ~ (not).</li>
+<li>operador lógico &amp; (and).</li>
+<li>operador lógico | (or).</li>
+</ol>
+<p>Estas reglas puede romperse utilizando los <strong>delimitadores </strong>paréntesis “(“y “)” ya que estos delimitadores tienen mayor prioridad sobre cualquier operador.</p>
+<p>Veamos un ejemplo tomando la fórmula de cálculo de la distancia recorrida <strong>por un proyectil en tiro vertical. En matemática se expresaría como:</strong></p>
+<table border="1" style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p style="text-align: center;"><strong><span style="font-size: 14pt;">d = v<sub>i</sub>. t - ½ g. t<sup>2</sup></span></strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>donde <em>d </em>es la distancia recorrida (la incógnita), <em>v<sub>i</sub> </em>es la velocidad inicial del proyectil, <em>t </em>es el tiempo que transcurrió y <em>g </em>es la aceleración de la gravedad.</p>
+<p>Esto en pseudocódigo se expresaría como:</p>
+<p>d &lt;- vi * t – 1 / 2 * g * t ^ 2</p>
+<p>definamos como lote de prueba los siguientes valores: vi ← 100</p>
+<p>t ← 10</p>
+<p>g ← 9.8</p>
+<p>Analicemos por parte, primero d es la variable de destino, no forma parte de la expresión y el símbolo &lt;­ es la instrucción que indica la acción de almacenamiento en la memoria.</p>
+<p>Luego la expresión está conformada por varias subexpresiones, estas se resuelven según las reglas de precedencia de su operador (se utilizara la letra S para indicar cada subexpresión):</p>
+<p><img src="formula_1.png" alt="Subexpresiones" width="640" height="205" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<ol>
+<li>Se resuelve primero la potenciación S1 ← t ^ 2, con lo cual S1 vale</li>
+<li>Luego hay un conjunto de productos y divisiones en el mismo nivel, por lo tanto tendrá prioridad la de la izquierda: S2 ← v1 * t, (100 * 10) resultado</li>
+<li>S3 ← 1 / 2, resultado 5</li>
+<li>S4 ← S3 * g, (0.5 * 9.8) resultado 4.9</li>
+<li>S5 ← S4 * S1, (4.9 * 100) resultado 490</li>
+<li>finalmente la resta que posee el menor nivel de precedencia, S6 ← S2 – S5, (1000 – 490) resultado final 510.</li>
+</ol></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="operadores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="operadores_lgicos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
